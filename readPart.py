@@ -16,14 +16,7 @@ def isNumbers(someString):
     #print(someString)
     #if character is a number, pass true, othervise proceed for other characters, if None number, skip that someString
     for character in someString:
-        #print(character)
-        if character.isdecimal():
-            #print("this element has numbers")
-            isIt = True
-        elif character.isdigit():
-            #print("this element has numbers")
-            isIt = True
-        elif character.isnumeric():
+        if character.isnumeric():
             #print("this element has numbers")
             isIt = True
         elif character:
@@ -73,7 +66,7 @@ def check_drawing(image_path, image_name):
                 partNoFormatted = isPartNumber(element)
                 #Check if first A is in place:
                 if partNoFormatted[2] == "A":
-                    print(partNoFormatted + " has is aligned from the beginning")
+                    print(partNoFormatted + " is aligned from the beginning")
                     if len(partNoFormatted)>13:
                         print("Cleaning the unnecessary characters from the end")
                         partNoFormatted = partNoFormatted[0:13:]
