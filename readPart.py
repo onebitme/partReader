@@ -7,6 +7,8 @@ import os
 #Python REGEX
 import re
 
+#Am I the same repo
+
 #Tesseract Installation path
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
